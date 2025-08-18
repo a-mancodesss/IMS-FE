@@ -68,7 +68,7 @@ export default function RoomDetail() {
   useEffect(() => {
     async function fetchItemData() {
       try {
-        const fetchUrl = `${API_BASE_URL}/v1/rooms/${roomId}/item-details`;
+        const fetchUrl = `${API_BASE_URL}/api/v1/rooms/${roomId}/item-details`;
 
         const response = await fetch(fetchUrl, {
           method: "GET",
