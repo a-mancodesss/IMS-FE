@@ -18,7 +18,7 @@ import DeleteModal from "../../components/DeleteModal.jsx";
 import LoadingIndicator from "../../components/LoadingIndicator.jsx";
 
 import { AuthProvider } from "../../store/AuthProvider.jsx";
-import getEndpoint from "../../constants${API_BASE_URL}Endpoints.js";
+import getEndpoint from "../../constants/apiEndpoints.js";
 import { API_BASE_URL } from "../../utils/envVars.js";
 
 export default function RoomDetail() {

@@ -18,7 +18,7 @@ import DeleteModal from "../../components/DeleteModal.jsx";
 import LoadingIndicator from "../../components/LoadingIndicator.jsx";
 
 import { AuthProvider } from "../../store/AuthProvider.jsx";
-import getEndpoint from "../../constants/api/Endpoints.js";
+import getEndpoint from "../../constants/apiEndpoints.js";
 
 import {
   currencyFormatter,
