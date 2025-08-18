@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 215 50% 23%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 215 25% 85%;
+    --secondary-foreground: 215 50% 23%;
+    --muted: 215 25% 95%;
+    --muted-foreground: 215 25% 40%;
+    --accent: 215 25% 90%;
+    --accent-foreground: 215 50% 23%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 160 55% 50%;
+    --success-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 215 50% 23%;
+    --radius: 0.5rem;
+    --sidebar: 215 50% 23%;
+    --sidebar-background: 215 50% 23%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-border: 215 30% 30%;
+  }
+}
+
+body {
+  font-family: Poppins, Inter, sans-serif;
+  font-style: normal;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+.dropdown::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  margin: 0.25rem;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background-color: rgb(197, 194, 194);
+  border: 2px solid #ffffff;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(181, 178, 178);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.circular-loader {
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(-90deg);
+}
+
+.circular-loader circle {
+  fill: none;
+  stroke: rgb(183, 182, 182);
+  stroke-width: 0.2rem;
+  stroke-dashoffset: 95;
+  stroke-dasharray: 95;
+  animation-name: loading;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+  0% {
+    stroke-dashoffset: 95;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
