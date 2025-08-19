@@ -34,7 +34,7 @@ export default function LoginPage({ handleLogin }) {
 
     async function postUserData(userData) {
       try {
-        const response = await fetch(`${API_BASE_URL}/v1/users/login`, {
+        const response = await fetch(`${API_BASE_URL}/api/v1/users/login`, {
           method: "POST",
           body: JSON.stringify(userData),
           headers: {
