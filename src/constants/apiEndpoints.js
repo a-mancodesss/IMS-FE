@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "../utils/envVars";
+
 export default function getEndpoint(
   identifier,
   action,
