@@ -78,7 +78,7 @@ export const TABLE_CONFIG = {
       },
       { label: "Item ID", additionalStyles: "justify-start w-28" },
       { label: "Make/Model No.", additionalStyles: "justify-start w-48" },
-      { label: "Location", additionalStyles: "justify-start w-[17.5rem]" },
+      { label: "Location", additionalStyles: "justify-start w-[11.5rem]" },
       { label: "Status", additionalStyles: "justify-center w-[5.75rem]" },
       { label: "View", additionalStyles: "justify-center w-24" },
     ],
@@ -107,7 +107,7 @@ export const TABLE_CONFIG = {
         {
           key: "itemRoom",
           label: "Location",
-          additionalStyles: "text-left w-[17.5rem]",
+          additionalStyles: "text-left w-[11.5rem]",
           additionalDetail: "itemFloor",
         },
         {

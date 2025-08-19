@@ -351,7 +351,7 @@ export default function ItemDetail() {
                         <th className="h-12 font-bold text-sidebar/95 flex justify-center w-[5.75rem] items-center">
                           Status
                         </th>
-                        <th className="h-12 font-bold text-sidebar/95 flex justify-start w-[17.5rem] items-center">
+                        <th className="h-12 font-bold text-sidebar/95 flex justify-start w-[11.5rem] items-center">
                           Location
                         </th>
                         <th className="h-12 font-bold text-sidebar/95 flex justify-start w-[4.8rem] items-center">
@@ -399,7 +399,7 @@ export default function ItemDetail() {
                               </td>
                               <td>
                                 <div className="flex flex-col">
-                                  <div className="justify-start w-[17.5rem]">
+                                  <div className="justify-start w-[11.5rem]">
                                     {historyLog.changes.room.to}
                                   </div>
 
