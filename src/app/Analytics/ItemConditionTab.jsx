@@ -47,7 +47,7 @@ export default function ItemConditionTab({ hidden, inventoryStats }) {
 
     async function fetchItemStatusData() {
       try {
-        const fetchUrl = `${API_BASE_URL}/v1/categories/${categoryId}/item-status-stats`;
+        const fetchUrl = `${API_BASE_URL}/api/v1/categories/${categoryId}/item-status-stats`;
 
         const response = await fetch(fetchUrl, {
           method: "GET",

@@ -22,7 +22,7 @@ export default function AcquisitionTab({ hidden }) {
   useEffect(() => {
     async function fetchItemSourceData() {
       try {
-        const fetchUrl = `${API_BASE_URL}/v1/categories/${categoryId}/item-acquisition-stats`;
+        const fetchUrl = `${API_BASE_URL}/api/v1/categories/${categoryId}/item-acquisition-stats`;
 
         const response = await fetch(fetchUrl, {
           method: "GET",
