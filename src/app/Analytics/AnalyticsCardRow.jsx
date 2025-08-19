@@ -64,7 +64,7 @@ export default function AnalyticsCardRow({ inventoryStats }) {
       <OverviewCard
         title="Working Items"
         path="/inventory"
-        dataPackage="0/0/1234/0/0/0"
+        dataPackage="0/0/0/0/1234/0/0/0"
         overviewNum={
           inventoryStats[
             INVENTORY_STATS_RESPONSE_MAPPING.responseMapping.workingItems
@@ -86,7 +86,7 @@ export default function AnalyticsCardRow({ inventoryStats }) {
       <OverviewCard
         title="Needs Attention"
         path="/inventory"
-        dataPackage="0/0/5678/0/0/0"
+        dataPackage="0/0/0/0/5678/0/0/0"
         overviewNum={
           inventoryStats[
             INVENTORY_STATS_RESPONSE_MAPPING.responseMapping.notWorkingItems

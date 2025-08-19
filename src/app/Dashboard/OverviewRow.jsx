@@ -45,7 +45,7 @@ export default function OverviewRow({ inventoryStats }) {
       <OverviewCard
         title="Working Items"
         path="/inventory"
-        dataPackage="0/0/1234/0/0/0"
+        dataPackage="0/0/0/0/1234/0/0/0"
         overviewNum={
           inventoryStats[
             INVENTORY_STATS_RESPONSE_MAPPING.responseMapping.workingItems
@@ -67,7 +67,7 @@ export default function OverviewRow({ inventoryStats }) {
       <OverviewCard
         title="Repairable Items"
         path="/inventory"
-        dataPackage="0/0/3456/0/0/0"
+        dataPackage="0/0/0/0/3456/0/0/0"
         overviewNum={
           inventoryStats[
             INVENTORY_STATS_RESPONSE_MAPPING.responseMapping.repairableItems
@@ -89,7 +89,7 @@ export default function OverviewRow({ inventoryStats }) {
       <OverviewCard
         title="Not-working Items"
         path="/inventory"
-        dataPackage="0/0/5678/0/0/0"
+        dataPackage="0/0/0/0/5678/0/0/0"
         overviewNum={
           inventoryStats[
             INVENTORY_STATS_RESPONSE_MAPPING.responseMapping.notWorkingItems
