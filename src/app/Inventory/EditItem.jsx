@@ -92,7 +92,7 @@ export default function EditItem() {
           item_cost: +itemData.itemCost,
         };
 
-        const fetchUrl = `${API_BASE_URL}/v1/items/${item._id}/details`;
+        const fetchUrl = `${API_BASE_URL}/api/v1/items/${item._id}/details`;
 
         const response = await fetch(fetchUrl, {
           method: "PATCH",

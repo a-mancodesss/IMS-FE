@@ -68,7 +68,7 @@ export default function ItemDetail() {
   useEffect(() => {
     async function fetchHistoryTableData() {
       try {
-        const fetchUrl = `${API_BASE_URL}/v1/items/${itemId}/history`;
+        const fetchUrl = `${API_BASE_URL}/api/v1/items/${itemId}/history`;
 
         const response = await fetch(fetchUrl, {
           method: "GET",
@@ -146,7 +146,7 @@ export default function ItemDetail() {
 
   async function handleUpdateItemStatus() {
     try {
-      const fetchUrl = `${API_BASE_URL}/v1/items/${itemId}/status`;
+      const fetchUrl = `${API_BASE_URL}/api/v1/items/${itemId}/status`;
 
       const response = await fetch(fetchUrl, {
         method: "PATCH",
@@ -171,7 +171,7 @@ export default function ItemDetail() {
 
   async function handleMoveItem() {
     try {
-      const fetchUrl = `${API_BASE_URL}/v1/items/${itemId}/room`;
+      const fetchUrl = `${API_BASE_URL}/api/v1/items/${itemId}/room`;
 
       const response = await fetch(fetchUrl, {
         method: "PATCH",
